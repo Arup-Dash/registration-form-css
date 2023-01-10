@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <h2>USER REGISTRATION FORM</h2>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <form action="">
+                <!-- full name -->
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name"
+                        required>
+                </div>
+                <!-- email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email"
+                        required>
+                </div>
+                <!-- phone number -->
+                <div class="form-group">
+                    <label for="phone">Phone number</label>
+                    <input type="number" id="phone" name="phone" class="form-control"
+                        placeholder="Enter your phone number" required>
+                </div>
+                <!-- aadhaar number -->
+                <div class="form-group">
+                    <label for="aadhaar">Aadhaar number</label>
+                    <input type="number" id="aadhaar" name="aadhaar" class="form-control"
+                        placeholder="Enter your Aadhaar number" required>
+                </div>
+                <!-- course -->
+                <div class="form-group">
+                    <label for="course">Choose your course</label>
+                    <select name="course" id="course" class="form-control" required>
+                        <option value="">Select a course</option>
+                        <option value="mca">MCA</option>
+                        <option value="btech">B.Tech</option>
+                        <option value="mtech">M.Tech</option>
+                        <option value="bplan">B.Plan</option>
+                        <option value="imsc">Int. MSc</option>
+                    </select>
+                </div>
+
+                <!-- gender -->
+                <div class="form-group">
+                    <label for="gender" class="label">Gender</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    &nbsp;
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    &nbsp;
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </div>
+
+                <!-- address -->
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea name="address" id="address" class="form-control"
+                        placeholder="Enter your address"></textarea>
+                </div>
+
+                <!-- password -->
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Please eneter your password"
+                        class="form-control">
+                </div>
+
+                <!-- confirm password -->
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="confirm_password" id="confirm_password"
+                        placeholder="Please re-enter your password" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="form-control btn">Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+
+</body>
+
+</html>
